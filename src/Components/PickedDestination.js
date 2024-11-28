@@ -16,12 +16,12 @@ distance:"225 MIL. KM",
 traveltime:"9 MONTHS"},
 {img:Europa,
     Title:"Europa",
-    description:"Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
-    distance:"225 MIL. KM",
-    traveltime:"9 MONTHS"},
+    description:"The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+    distance:"628 MIL. KM",
+    traveltime:"3 YEARS"},
  {img:Titan,
         Title:"Titan",
-        description:"Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
-        distance:"225 MIL. KM",
-        traveltime:"9 MONTHS"}
+        description:"The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
+        distance:"1.6 BIL. KM",
+        traveltime:"7 YEARS"}
 ]

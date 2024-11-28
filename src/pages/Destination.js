@@ -11,7 +11,7 @@ setactive(name)
     }
     const activeData= datas.find((data)=>data.Title===active)
   return (
-<section className="xl:bg-[url('./assets/destination/background-destination-desktop.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] bg-cover bg-center bg-repeat-y h-[200vh]">
+<section className="xl:bg-[url('./assets/destination/background-destination-desktop.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] bg-cover bg-center bg-repeat-y h-[150vh]">
 
         <Nav/>
         <div className='w-[1110px] h-[792px] m-auto pt-12 mt-4'>
@@ -28,7 +28,7 @@ setactive(name)
         <li><a href='#Titan'className={`uppercase font-light text-sm ${active==="Titan"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Titan")}>Titan</a></li>
     </ul>
     <div className='text-white w-[445px] h-[254px] space-y-9'>
-    <h2 className='text-8xl font-light'>{activeData.Title}</h2>
+    <h2 className='text-8xl font-light uppercase'>{activeData.Title}</h2>
     <p className='leading-7'>{activeData.description}</p>
    </div>
 <hr className='opacity-30'/>
