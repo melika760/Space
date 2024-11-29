@@ -15,7 +15,7 @@ const Nav = () => {
 <ul className='text-white flex justify-center items-center h-full xl:space-x-36  md:space-x-12'>
     <li className='font-light'><Link to={"/"} className={isActive('/')?"border-b-2 p-9":"xl:hover:border-b-2 p-9"}><strong>00</strong> Home</Link></li>
     <li className='font-light'><Link to={"/destination"} className={isActive('/destination')?"border-b-2 p-9":"xl:hover:border-b-2 p-9"}><strong>01</strong> Destination</Link></li>
-    <li className='font-light'><Link><strong>02</strong> Crew</Link></li>
+    <li className='font-light'><Link to={"/crew"} className={isActive('/crew')?"border-b-2 p-9":"xl:hover:border-b-2 p-9"}><strong>02</strong> Crew</Link></li>
     <li className='font-light'><Link><strong>03</strong> Technology</Link></li>
 </ul>
    </nav>
