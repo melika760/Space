@@ -12,7 +12,7 @@ const Nav = () => {
     <img src={line} className='w-[540px] h-[0.15rem] opacity-25 md:hidden xl:block'  alt='line'/>
     </div>
    <nav className='bg-white bg-opacity-10 h-[96px] xl:w-[946px] max-lg:w-[660px]'>
-<ul className='text-white flex justify-center items-center h-full xl:space-x-36  md:space-x-16'>
+<ul className='text-white flex justify-center items-center h-full xl:space-x-36  md:space-x-12'>
     <li className='font-light'><Link to={"/"} className={isActive('/')?"border-b-2 p-9":"xl:hover:border-b-2 p-9"}><strong>00</strong> Home</Link></li>
     <li className='font-light'><Link to={"/destination"} className={isActive('/destination')?"border-b-2 p-9":"xl:hover:border-b-2 p-9"}><strong>01</strong> Destination</Link></li>
     <li className='font-light'><Link><strong>02</strong> Crew</Link></li>
