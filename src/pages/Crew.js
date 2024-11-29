@@ -4,7 +4,7 @@ import Mark from "../assets/crew/image-mark-shuttleworth.png"
 const Crew = () => {
     const [active,setactive]=useState("Mark")
     const handlechange=(name)=>{
-setactive(name)
+     setactive(name)
     }
     console.log(active)
   return (
@@ -18,10 +18,11 @@ setactive(name)
     <h2 className='text-6xl font-light uppercase '>MARK SHUTTLEWORTH </h2>
     <p className='leading-7 text-blue-200'>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
    </div>
-   <ul className='text-white flex justify-start space-x-10 p-7 list-disc max-lg:justify-center cursor-pointer'>
-        <li><a  href="#Mark" className={` ${active==="Mark"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange("Mark")}>1</a></li>
-        <li><a  href="#Douglas" className={` ${active==="Douglas"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Duoglas')}>1</a></li>
-        <li><a  href="#Victor" className={` ${active==="Victor"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Victor')}>1</a></li>
+   <ul className='text-white flex justify-start space-x-10 p-7  max-lg:justify-center cursor-pointer'>
+        <li><a  href="#Mark" className={`text-6xl ${active==="Mark"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange("Mark")}>.</a></li>
+        <li><a  href="#Douglas" className={`text-6xl ${active==="Douglas"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Douglas')}>.</a></li>
+        <li><a  href="#Victor" className={`text-6xl ${active==="Victor"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Victor')}>.</a></li>
+        <li><a  href="#Anoshe" className={`text-6xl ${active==="Anoshe"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Anoshe')}>.</a></li>
     </ul>
 </div>
 <div className='w-[539px]'>
