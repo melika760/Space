@@ -9,11 +9,11 @@ const Crew = () => {
     }
     const activeData=crewMembers.find((data)=>data.Title===active)
   return (
-<PageLayout bgClass={"xl:bg-[url('./assets/crew/background-crew-desktop.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')] bg-repeat-y max-lg:h-[130vh]"}>
+<PageLayout bgClass={"xl:bg-[url('./assets/crew/background-crew-desktop.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')] bg-repeat-y max-lg:h-[125vh] max-lg:overflow-hidden"}>
 <div className='w-[1110px] h-[792px] m-auto pt-12 mt-4 max-lg:w-[688px]'>
 <h2 className='uppercase text-white text-3xl'>  <span className='opacity-20 '>02</span>  Meet your crew</h2>
 <div className='flex space-x-4 mt-[80px] p-10  max-lg:flex-col max-lg:space-y-8 max-lg:items-center'>
-<div className='w-[539px] items-center  space-y-10 grid grid-cols-1 gap-[100px] max-lg:w-[512px]'>
+<div className='w-[539px] items-center  space-y-10 grid grid-cols-1 gap-[100px] max-lg:w-[482px]'>
 <div className='text-white w-[445px] h-[254px] space-y-9 max-lg:text-center'>
     <h3 className='text-3xl font-light uppercase opacity-50'>{activeData.job} </h3>
     <h2 className='text-6xl font-light uppercase '>{activeData.Name} </h2>
