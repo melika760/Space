@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <section className="xl:bg-[url('./assets/home/background-home-desktop.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] bg-cover bg-center h-screen overflow-hidden">
+    <section className="xl:bg-[url('./assets/home/background-home-desktop.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] bg-cover bg-center h-[150vh] overflow-hidden">
       <Nav/>
       <div className='xl:flex xl:justify-between  xl:h-[632px] xl:w-[1110px] md:w-[768px] md:h-[928px]  md:flex max-lg:flex-col md:justify-evenly m-auto items-center max-lg:text-center'>
         <div className=' text-white w-[540px] md:w-[512px] h-[343px] grid grid-cols-1 gap-5'><p className='uppercase font-light text-blue-200 leading-none'>So you want to travel to </p>
