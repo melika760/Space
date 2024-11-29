@@ -3,6 +3,7 @@ import Mars from "../assets/destination/image-mars.png"
 import Europa from "../assets/destination/image-europa.png"
 import Titan from "../assets/destination/image-titan.png"
 import Mark from "../assets/crew/image-mark-shuttleworth.png"
+import Douglas from "../assets/crew/image-douglas-hurley.png"
 export const datas=[
     {img:moon,
 Title:"Moon",
@@ -27,6 +28,13 @@ traveltime:"9 MONTHS"},
         traveltime:"7 YEARS"}
 ]
 export const crewMembers=[
+    {
+        img:Douglas,
+        Title:"Douglas",
+        Name:"Douglas Hurley",
+        job:"Commander",
+        description:"Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+    },
     {
         img:Mark,
         Title:"Mark",
