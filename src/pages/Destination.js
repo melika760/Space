@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Nav from '../Components/Nav'
 import { datas } from '../Components/Constants'
 import PageLayout from '../Components/PageLayout'
 
