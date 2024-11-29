@@ -10,7 +10,7 @@ const Crew = () => {
     }
     const activeData=crewMembers.find((data)=>data.Title===active)
   return (
-<PageLayout  num={"02"} des={"Meet your crew"} bgClass={"xl:bg-[url('./assets/crew/background-crew-desktop.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')] bg-repeat-y max-lg:h-[125vh] max-lg:overflow-hidden"}>
+<PageLayout  num={"02"} des={"Meet your crew"} bgClass={"xl:bg-[url('./assets/crew/background-crew-desktop.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')] bg-repeat-y max-lg:h-[125vh] overflow-hidden xl:h-[143vh]"}>
 <div className='flex space-x-4 mt-[80px] p-10  max-lg:flex-col max-lg:space-y-8 max-lg:items-center'>
 <div className='w-[539px] items-center  space-y-10 grid grid-cols-1 gap-[100px] max-lg:w-[482px]'>
 <div className='text-white w-[445px] h-[254px] space-y-9 max-lg:text-center'>

@@ -1,11 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer utilities {
-  .shadow-bottom-blend {
-    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1); /* Adjust spread and opacity */
-  }
-}
 
 body {
   margin: 0;
