@@ -30,6 +30,8 @@ export const crewMembers=[
     {
         img:Mark,
         Title:"Mark",
-        Name:""
+        Name:"MARK SHUTTLEWORTH",
+        job:"Mission Specialist",
+        description:"Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
     }
 ]
