@@ -20,10 +20,7 @@ const Crew = () => {
     <p className='leading-7 text-blue-200 text-sm'>{activeData.description}</p>
    </div>
    <ul className='text-white flex justify-start space-x-10 p-7  max-lg:justify-center cursor-pointer'>
-   <li><a  href="#Douglas" className={`text-7xl ${active==="Douglas"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Douglas')}>.</a></li>
-        <li><a  href="#Mark" className={`text-7xl ${active==="Mark"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange("Mark")}>.</a></li>
-        <li><a  href="#Victor" className={`text-7xl ${active==="Victor"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Victor')}>.</a></li>
-        <li><a  href="#Anousheh" className={`text-7xl ${active==="Anousheh"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Anousheh')}>.</a></li>
+   {crewMembers.map((item)=>(<li key={item.Title}><a href={`#${item.Title}`} className={`text-7xl ${active===item.Title?"opacity-100":"opacity-10"}`} onClick={()=>handlechange(`${item.Title}`)}>.</a></li>))}
     </ul>
 </div>
 <div className='w-[539px]'>

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { datas } from '../Components/Constants'
 import PageLayout from '../Components/PageLayout'
 
+
+
 const Destination = () => {
 
     const [active,setactive]=useState("Moon")
@@ -20,11 +22,10 @@ setactive(name)
 </div>
 <div className='w-[539px] items-center p-9 space-y-10 '>
     <ul className='text-white flex justify-start space-x-7  max-lg:justify-center'>
-        <li><a href='#Moon' className={`uppercase font-light text-sm ${active==="Moon"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Moon")}>Moon</a></li>
-        <li><a href='#Mars'className={`uppercase font-light text-sm ${active==="Mars"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Mars")}>Mars</a></li>
-        <li><a href='#Europa'className={`uppercase font-light text-sm ${active==="Europa"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Europa")}>Europa</a></li>
-        <li><a href='#Titan'className={`uppercase font-light text-sm ${active==="Titan"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Titan")}>Titan</a></li>
+        {datas.map((item)=>(<li key={item.Title}><a href={`#${item.Title}`} className={`uppercase font-light text-sm ${active===item.Title?"border-b-2 p-1":""}`} onClick={()=>handlechange(`${item.Title}`)}>{item.Title}</a></li>))}
+
     </ul>
+   
     <div className='text-white w-[445px] h-[254px] space-y-9 max-lg:text-center'>
     <h2 className='text-8xl font-light uppercase'>{activeData.Title}</h2>
     <p className='leading-7'>{activeData.description}</p>
