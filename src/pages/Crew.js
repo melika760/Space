@@ -22,7 +22,7 @@ const Crew = () => {
         <li><a  href="#Mark" className={`text-6xl ${active==="Mark"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange("Mark")}>.</a></li>
         <li><a  href="#Douglas" className={`text-6xl ${active==="Douglas"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Douglas')}>.</a></li>
         <li><a  href="#Victor" className={`text-6xl ${active==="Victor"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Victor')}>.</a></li>
-        <li><a  href="#Anoshe" className={`text-6xl ${active==="Anoshe"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Anoshe')}>.</a></li>
+        <li><a  href="#Anousheh" className={`text-6xl ${active==="Anousheh"?"opacity-100":"opacity-10"}`} onClick={()=>handlechange('Anousheh')}>.</a></li>
     </ul>
 </div>
 <div className='w-[539px]'>

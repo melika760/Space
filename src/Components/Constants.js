@@ -2,6 +2,7 @@ import moon from "../assets/destination/image-moon.png"
 import Mars from "../assets/destination/image-mars.png"
 import Europa from "../assets/destination/image-europa.png"
 import Titan from "../assets/destination/image-titan.png"
+import Mark from "../assets/crew/image-mark-shuttleworth.png"
 export const datas=[
     {img:moon,
 Title:"Moon",
@@ -24,4 +25,11 @@ traveltime:"9 MONTHS"},
         description:"The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
         distance:"1.6 BIL. KM",
         traveltime:"7 YEARS"}
+]
+export const crewMembers=[
+    {
+        img:Mark,
+        Title:"Mark",
+        Name:""
+    }
 ]
