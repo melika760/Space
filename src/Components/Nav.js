@@ -13,8 +13,8 @@ const Nav = () => {
     </div>
    <nav className='bg-white bg-opacity-10 h-[96px] xl:w-[946px] max-lg:w-[640px]'>
 <ul className='text-white flex justify-center items-center h-full xl:space-x-36  md:space-x-16'>
-    <li className='font-light'><Link to={"/"} className={isActive('/')?"border-b-2 p-9":"hover:border-b-2 p-9"}><strong>00</strong> Home</Link></li>
-    <li className='font-light'><Link to={"/destination"} className={isActive('/destination')?"border-b-2 p-9":"hover:border-b-2 p-9"}><strong>01</strong> Destination</Link></li>
+    <li className='font-light'><Link to={"/"} className={isActive('/')?"border-b-2 p-9":"xl:hover:border-b-2 p-9"}><strong>00</strong> Home</Link></li>
+    <li className='font-light'><Link to={"/destination"} className={isActive('/destination')?"border-b-2 p-9":"xl:hover:border-b-2 p-9"}><strong>01</strong> Destination</Link></li>
     <li className='font-light'><Link><strong>02</strong> Crew</Link></li>
     <li className='font-light'><Link><strong>03</strong> Technology</Link></li>
 </ul>

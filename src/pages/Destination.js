@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Nav from '../Components/Nav'
-import { datas } from '../Components/PickedDestination'
+import { datas } from '../Components/Constants'
 
 const Destination = () => {
 
@@ -11,17 +11,17 @@ setactive(name)
     }
     const activeData= datas.find((data)=>data.Title===active)
   return (
-<section className="xl:bg-[url('./assets/destination/background-destination-desktop.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] bg-cover bg-center bg-repeat-y h-[150vh]">
+<section className="xl:bg-[url('./assets/destination/background-destination-desktop.jpg')] md:bg-[url('./assets/destination/background-destination-tablet.jpg')] bg-cover bg-center bg-repeat-y h-[150vh]">
 
         <Nav/>
-        <div className='w-[1110px] h-[792px] m-auto pt-12 mt-4'>
+        <div className='w-[1110px] h-[792px] m-auto pt-12 mt-4 max-lg:w-[688px]'>
         <h2 className='uppercase text-white text-3xl'>  <span className='opacity-20 '>01</span>  Pick Your destination</h2>
-        <div className='flex space-x-4 mt-[90px] p-10'>
-<div className='w-[539px]'>
+        <div className='flex space-x-4 mt-[90px] p-10 max-lg:flex-col max-lg:space-y-8 max-lg:items-center'>
+<div className='w-[539px] '>
     <img src={activeData.img} alt={activeData.Title} className='w-[480px] h-[480px]'/>
 </div>
 <div className='w-[539px] items-center p-9 space-y-10'>
-    <ul className='text-white flex justify-start space-x-7 '>
+    <ul className='text-white flex justify-start space-x-7  '>
         <li><a href='#Moon' className={`uppercase font-light text-sm ${active==="Moon"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Moon")}>Moon</a></li>
         <li><a href='#Mars'className={`uppercase font-light text-sm ${active==="Mars"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Mars")}>Mars</a></li>
         <li><a href='#Europa'className={`uppercase font-light text-sm ${active==="Europa"?"border-b-2 p-1":""}`} onClick={()=>handlechange("Europa")}>Europa</a></li>
