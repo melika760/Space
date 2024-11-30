@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import PageLayout from '../Components/PageLayout'
-import tech from "../assets/technology/image-launch-vehicle-landscape.jpg"
 import { techs } from '../Components/Constants'
 const Technology = () => {
   const[active,setactive]=useState("Launch")
@@ -13,7 +12,7 @@ const Technology = () => {
 <div className='w-[635px] h-[304px] flex space-x-8 relative '>
 <ul className='grid gap-[32px] '>
   {techs.map((item)=>(
-    <li className='border-[1px] border-white rounded-full w-[80px] h-[80px] text-center leading-[80px] text-white text-xl cursor-pointer' key={item.id} onClick={()=>handlechange(item.Title)}><a href={`#${item.Title}`} alt={item.Title} >{item.id}</a></li>
+    <li className={`border-[1px] border-white rounded-full w-[80px] h-[80px] text-center leading-[80px] text-white text-xl cursor-pointer ${active===item.Title?"bg-white text-black":""}`} key={item.id} onClick={()=>handlechange(item.Title)}><a href={`#${item.Title}`} alt={item.Title} >{item.id}</a></li>
   ))}
     <li className='border-[1px] border-white rounded-full w-[80px] h-[80px] text-center leading-[80px] text-white text-xl'>1</li>
     <li className='border-[1px] border-white rounded-full w-[80px] h-[80px] text-center leading-[80px] text-white text-xl'>1</li>
