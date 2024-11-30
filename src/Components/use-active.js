@@ -1,12 +1,14 @@
 import { useState } from "react"
 
-const useActive=()=>{
-    const[active,setactive]=useState("Moon");
-    const handleChange=(name)=>{
+const useActive=(initialAcive,datas)=>{
+    const[active,setactive]=useState(initialAcive);
+    const handlechange=(name)=>{
         setactive(name)
     }
+    const activeData=datas.find((data)=>data.Title===active)
     return{
-        handleChange,active
+        handlechange,active,activeData
     }
+   
 }
 export default useActive;

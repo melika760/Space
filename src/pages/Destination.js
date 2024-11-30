@@ -1,15 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { datas } from '../Components/Constants'
 import PageLayout from '../Components/PageLayout'
+import useActive from '../Components/use-active'
 
 const Destination = () => {
 
-    const [active,setactive]=useState("Moon")
-    const handlechange=(name)=>{
-setactive(name)
-
-    }
-    const activeData= datas.find((data)=>data.Title===active)
+const{active,handlechange,activeData}=useActive("Moon",datas)
   return (
 <PageLayout space={"space-x-4"} num={"01"} des={"Pick Your destination"} bgClass={"xl:bg-[url('./assets/destination/background-destination-desktop.jpg')] md:bg-[url('./assets/destination/background-destination-tablet.jpg')]"}>
 <div className='w-[539px] max-lg:p-9'>
