@@ -6,6 +6,7 @@ import Mark from "../assets/crew/image-mark-shuttleworth.png"
 import Douglas from "../assets/crew/image-douglas-hurley.png"
 import Victor from "../assets/crew/image-victor-glover.png"
 import Anousheh from "../assets/crew/image-anousheh-ansari.png"
+import Launch from "../assets/technology/image-launch-vehicle-landscape.jpg"
 export const datas=[
     {img:moon,
 Title:"Moon",
@@ -57,5 +58,15 @@ export const crewMembers=[
         Name:"Anousheh Ansari",
         job:"Flight Engineer",
         description:"Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. "
+    }
+]
+export const techs=[
+    {
+        img:Launch,
+        id:"1",
+        Title:"Launch",
+        Name:"LAUNCH VEHICLE",
+        job:"THE TERMINOLOGY…",
+        description:"A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad! "
     }
 ]
