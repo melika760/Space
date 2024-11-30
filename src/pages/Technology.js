@@ -6,8 +6,12 @@ const Technology = () => {
   const{active,handlechange,activeData}=useActive("Launch",techs)
   return (
     <PageLayout space={"justify-between"} num={"03"} des={"SPACE LAUNCH 101"} bgClass={"xl:bg-[url('./assets/technology/background-technology-desktop.jpg')] md:bg-[url('./assets/technology/background-technology-tablet.jpg')] h-[150vh]"}>
-<div className='w-[635px] h-[304px] flex items-center space-x-8 mt-[100px] relative '>
-<ul className='grid gap-[32px] '>
+<div className='w-[768px] xl:hidden'>
+  <img src={activeData.img2} alt={activeData.Title} className='w-full h-[600px]'/>
+</div>
+<div className='w-[635px] h-[304px] max-lg:w-[688px] flex items-center space-x-8 mt-[100px] relative max-lg:flex-col max-lg:items-center max-lg:space-y-11'>
+
+<ul className='grid gap-[32px] max-lg:flex'>
   {techs.map((item)=>(
     <li className={`border-[1px] border-white rounded-full w-[80px] h-[80px] text-center leading-[80px] text-white text-xl cursor-pointer ${active===item.Title?"bg-white text-black":""}`} key={item.id} onClick={()=>handlechange(item.Title)}><a href={`#${item.Title}`} alt={item.Title} >{item.id}</a></li>
   ))}
