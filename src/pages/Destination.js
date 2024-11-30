@@ -11,7 +11,7 @@ setactive(name)
     }
     const activeData= datas.find((data)=>data.Title===active)
   return (
-<PageLayout num={"01"} des={"Pick Your destination"} bgClass={"xl:bg-[url('./assets/destination/background-destination-desktop.jpg')] md:bg-[url('./assets/destination/background-destination-tablet.jpg')]"}>
+<PageLayout space={"space-x-4"} num={"01"} des={"Pick Your destination"} bgClass={"xl:bg-[url('./assets/destination/background-destination-desktop.jpg')] md:bg-[url('./assets/destination/background-destination-tablet.jpg')]"}>
 <div className='w-[539px] max-lg:p-9'>
     <img src={activeData.img} alt={activeData.Title} className='w-[480px] h-[480px]'/>
 </div>
