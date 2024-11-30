@@ -9,6 +9,9 @@ import Anousheh from "../assets/crew/image-anousheh-ansari.png"
 import Launch from "../assets/technology/image-launch-vehicle-landscape.jpg"
 import  capsule from "../assets/technology/image-space-capsule-landscape.jpg"
 import spaceport from "../assets/technology/image-spaceport-landscape.jpg"
+import Launch2 from "../assets/technology/image-launch-vehicle-portrait.jpg"
+import capsule2 from "../assets/technology/image-space-capsule-portrait.jpg"
+import spaceport2 from "../assets/technology/image-spaceport-portrait.jpg"
 export const datas=[
     {img:moon,
 Title:"Moon",
@@ -65,6 +68,7 @@ export const crewMembers=[
 export const techs=[
     {
         img:Launch,
+        img2:Launch2,
         id:"1",
         Title:"Launch",
         Name:"LAUNCH VEHICLE",
@@ -73,6 +77,7 @@ export const techs=[
     },
     {
         img:spaceport,
+        img2:spaceport2,
         id:"2",
         Title:"SPACEPORT",
         Name:"SPACEPORT",
@@ -81,6 +86,7 @@ export const techs=[
     },
     {
         img:capsule,
+        img2:capsule2,
         id:"3",
         Title:"CAPSULE",
         Name:"SPACE CAPSULE",
