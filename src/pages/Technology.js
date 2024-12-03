@@ -13,7 +13,7 @@ const Technology = () => {
 
 <ul className='grid gap-[32px] max-lg:flex'>
   {techs.map((item)=>(
-    <li className={`border-[1px] border-white rounded-full w-[80px] h-[80px] text-center leading-[80px] text-white text-xl cursor-pointer ${active===item.Title?"bg-white text-black":""}`} key={item.id} onClick={()=>handlechange(item.Title)}><a href={`#${item.Title}`} alt={item.Title} >{item.id}</a></li>
+    <li className={`border-[1px] border-white rounded-full w-[80px] h-[80px] text-center leading-[80px] text-white text-xl cursor-pointer ${active===item.Title?"bg-white text-blue-950":""}`} key={item.id} onClick={()=>handlechange(item.Title)}><a href={`#${item.Title}`} alt={item.Title} >{item.id}</a></li>
   ))}
   
   
