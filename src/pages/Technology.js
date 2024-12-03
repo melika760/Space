@@ -5,7 +5,7 @@ import useActive from '../Components/use-active'
 const Technology = () => {
   const{active,handlechange,activeData}=useActive("Launch",techs)
   return (
-    <PageLayout space={"justify-between"} num={"03"} des={"SPACE LAUNCH 101"} bgClass={"xl:bg-[url('./assets/technology/background-technology-desktop.jpg')] md:bg-[url('./assets/technology/background-technology-tablet.jpg')] h-[150vh]"}>
+    <PageLayout space={"justify-between mt-[80px] max-lg:mt-2"} num={"03"} des={"SPACE LAUNCH 101"} bgClass={"xl:bg-[url('./assets/technology/background-technology-desktop.jpg')] md:bg-[url('./assets/technology/background-technology-tablet.jpg')] bg-[url('./assets/technology/background-technology-mobile.jpg')]  h-[150vh]"}>
 <div className='w-[768px] xl:hidden'>
   <img src={activeData.img2} alt={activeData.Title} className='w-full h-[600px]'/>
 </div>

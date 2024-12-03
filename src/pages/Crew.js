@@ -7,7 +7,7 @@ import useActive from '../Components/use-active'
 const Crew = () => {
   const{active,handlechange,activeData}=useActive("Douglas",crewMembers)
   return (
-<PageLayout space={"space-x-4"} num={"02"} des={"Meet your crew"} bgClass={"xl:bg-[url('./assets/crew/background-crew-desktop.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')] bg-repeat-y max-lg:h-[135vh] overflow-hidden xl:h-[143vh]"}>
+<PageLayout space={"space-x-4 mt-[80px] max-lg:mt-2"} num={"02"} des={"Meet your crew"} bgClass={"xl:bg-[url('./assets/crew/background-crew-desktop.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')]  bg-[url('./assets/crew/background-crew-mobile.jpg')] bg-repeat-y max-lg:h-[135vh] overflow-hidden xl:h-[143vh]"}>
 <div className='w-[539px] items-center  space-y-10 grid grid-cols-1 gap-[100px] max-lg:w-[482px]'>
 <div className='text-white w-[445px] h-[254px] space-y-9 max-lg:text-center'>
     <h3 className='text-3xl font-light uppercase opacity-50'>{activeData.job} </h3>
