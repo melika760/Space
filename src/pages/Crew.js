@@ -11,7 +11,7 @@ const Crew = () => {
 <div className='w-[539px] items-center  space-y-10 grid grid-cols-1 gap-[100px] max-lg:w-[482px]'>
 <div className='text-white w-[445px] h-[254px] space-y-9 max-lg:text-center'>
     <h3 className='text-3xl font-light uppercase opacity-50'>{activeData.job} </h3>
-    <h2 className='text-6xl font-light uppercase '>{activeData.Name} </h2>
+    <h2 className='text-6xl max-md:text-4xl font-light uppercase '>{activeData.Name} </h2>
     <p className='leading-7 text-blue-200 text-[18px]'>{activeData.description}</p>
    </div>
    <ul className='text-white flex justify-start space-x-10 p-7  max-lg:justify-center cursor-pointer'>
