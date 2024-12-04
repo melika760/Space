@@ -19,7 +19,7 @@ const Nav = ({height}) => {
     <img src={logo} className='mr-8 ml-8' width={48} height={48} alt='logo'/>
     <img src={line} className='w-[540px] h-[0.15rem] opacity-25 max-lg:hidden xl:block'  alt='line'/>
     </div>
-    <nav className="xl:hidden lg:hidden mr-2">
+    <nav className="xl:hidden lg:hidden md:hidden max-md:block mr-2">
         <button
           onClick={handleClick}
           type="button"
