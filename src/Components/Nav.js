@@ -48,7 +48,7 @@ const Nav = ({height}) => {
         <div>
           <div className=' top-0 right-0 w-full fixed inset-0 bg-black bg-opacity-50 ' onClick={closeOverlay}></div>
            <div
-            className={`absolute top-0 right-0 w-[60%] ${height} overflow-hidden   bg-black bg-opacity-30 backdrop-blur-sm`}
+            className={`absolute top-0 right-0 w-[60%] ${height} overflow-hidden   bg-black bg-opacity-30 backdrop-blur-sm z-40`}
             id="navbar-hamburger"
             role="dialog"
           >
@@ -65,13 +65,13 @@ const Nav = ({height}) => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/crew" onClick={closeOverlay}>
-                  Crew
+              <Link to="/crew" className={`text-3xl text-white font-light ${isActive("/crew")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
+                  02 Crew
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/technology" onClick={closeOverlay}>
-                  Technology
+              <Link to="/technology" className={`text-3xl text-white font-light ${isActive("/technology")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
+                  03 Technology
                 </Link>
               </li>
             </ul>
