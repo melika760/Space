@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from "../assets/Logo.png"
 import line from "../assets/line.png"
 import { Link, useLocation} from 'react-router-dom'
+import close from "../assets/icons8-close.svg"
 const Nav = ({height}) => {
   const location=useLocation()
   const isActive=(path)=>location.pathname===path
@@ -52,25 +53,27 @@ const Nav = ({height}) => {
             id="navbar-hamburger"
             role="dialog"
           >
-            <button onClick={closeOverlay} className='text-white float-right w-[50px] h-[50px]'>za</button>
+            <button onClick={closeOverlay} className='m-5 bg-white float-right w-[30px] h-[30px]'>
+              <img src={close} alt='close' className='w-[30px]'/>
+            </button>
             <ul className="grid grid-cols-1 gap-12 font-medium mt-[8rem] p-4 ">
               <li className="mb-2">
-                <Link to="/" className={`text-3xl text-white font-light ${isActive("/")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
+                <Link to="/" className={`text-xl text-white font-light ${isActive("/")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
                   00 Home
                 </Link>
               </li>
               <li className="mb-2">
-              <Link to="/destination" className={`text-3xl text-white font-light ${isActive("/destination")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
+              <Link to="/destination" className={`text-xl text-white font-light ${isActive("/destination")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
                   01 Destination
                 </Link>
               </li>
               <li className="mb-2">
-              <Link to="/crew" className={`text-3xl text-white font-light ${isActive("/crew")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
+              <Link to="/crew" className={`text-xl text-white font-light ${isActive("/crew")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
                   02 Crew
                 </Link>
               </li>
               <li className="mb-2">
-              <Link to="/technology" className={`text-3xl text-white font-light ${isActive("/technology")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
+              <Link to="/technology" className={`text-xl text-white font-light ${isActive("/technology")?"border-b-2 p-2":""}`} onClick={closeOverlay}>
                   03 Technology
                 </Link>
               </li>
