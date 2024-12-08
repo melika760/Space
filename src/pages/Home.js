@@ -4,7 +4,7 @@ import Nav from '../Components/Nav'
 
 const Home = () => {
   return (
-  <section className="xl:bg-[url('./assets/home/background-home-desktop.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg') bg-[url('./assets/home/background-home-mobile.jpg')]  h-[100vh] bg-cover bg-center bg-repeat-y overflow-hidden max-xs:h-[130vh] ">
+  <section className="xl:bg-[url('./assets/home/background-home-desktop.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg') bg-[url('./assets/home/background-home-mobile.jpg')]  h-[110vh] bg-cover bg-center bg-repeat-y overflow-hidden max-xs:h-[130vh] ">
     <Nav height={"h-[130vh]"}/>
       <div className='flex xl:justify-between h-[632px]  max-xs:h-[632px] xl:w-[1110px]  max-md:h-[928px]  md:flex max-lg:flex-col  md:mt-[9rem] max-xs:mt-[9rem]  justify-evenly  xl:mt-0 text-center  m-auto items-center w-[323px]'>
         <div className=' text-white xl:w-[540px] md:w-[512px] h-[343px] grid grid-cols-1 gap-5'><p className='uppercase font-light text-blue-200 leading-none '>So you want to travel to </p>
